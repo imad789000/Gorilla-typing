@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(fonts/Roboto-Mono/RobotoMono-Regular.ttf);
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #181818;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1{
+    width: fit-content;
+    position: absolute;
+    top: 10rem;
+    font-family: Roboto Mono;
+    color: #e5f4f4;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Contact{
+    color: #4e5155;
+    font-family: Roboto Mono;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 60vh;
+    right: 24.2vw;
+    transition: background-color 0.3s linear, font-size 0.3s linear, border-radius 0.5s linear, padding 0.3s linear, color 0.3s linear;
+}
+
+.Contact:hover{
+    transition: background-color 0.3s linear, font-size 0.3s linear, border-radius 0.5s linear, padding 0.3s linear, color 0.3s linear;
+    font-size: 0.9rem;
+    background-color: #17b8bd;
+    color: #e5f4f4;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.github{
+    text-decoration:none;
+    color: #4e5155;
+    font-family: Roboto Mono;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 60vh;
+    left: 24.2vw;
+    transition: background-color 0.3s linear, font-size 0.3s linear, border-radius 0.5s linear, padding 0.3s linear, color 0.3s linear;
+}
+
+
+.github:hover{
+    transition: background-color 0.3s linear, font-size 0.3s linear, border-radius 0.5s linear, padding 0.3s linear, color 0.3s linear;
+    font-size: 0.9rem;
+    background-color: #17b8bd;
+    color: #e5f4f4;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.text{
+    position: absolute;
+    font-family: Roboto Mono;
+    align-self: center;
+    width: 51vw;
+    height: 40vh;
+    word-wrap: break-word;
+    color: #4e5155;
+}
+
+.back{
+    position: absolute;
+    background-color: transparent;
+    color: rgb(78, 81, 85);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 2rem;
+    left: 2vw;
+    top: 2vh;
+}
+
+.back:hover{
+    color: #e5f4f4;
+}

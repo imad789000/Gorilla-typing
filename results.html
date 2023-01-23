@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="gorillaico.ico">
+    <link rel="stylesheet" href="resultstyle.css">
+    <script> </script>
+    <script src="html2canvas.js"></script>
+    <title>Gorillatype</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="gorillapng.png" alt="gorilla png" width="60" height="60">
+        <b style="color: #e5f4f4; font-family: Biotif; font-size:1.2cm;" >gorillatype</b>
+    </div>
+    
+    <div class="content" id="capture">
+        <div class="leftcontainer">
+            <div class="wpm">
+                <span style="color: #4e5155; font-family:Roboto Mono; font-size: 2rem; position: absolute;">WPM</span>
+                <p class="wpmContainer" style="color: #17b8bd; font-family:Roboto Mono; font-size: 4.2rem;"></p>
+            </div>
+
+            <div class="acc">
+                <span style="color: #4e5155; font-family:Roboto Mono; font-size: 2rem; position: absolute;">Accuracy</span>
+                <p class="accContainer" style="color: #17b8bd; font-family:Roboto Mono; font-size: 4.2rem;"></p>
+            </div>
+
+            <div class="test-type">
+                <span style="color: #4e5155; font-family:Roboto Mono; font-size: 1rem;">Test Type</span>
+                <p class="typeContainer" style="color: #17b8bd; font-family:Roboto Mono; font-size: 1.05rem;"></p>
+            </div>
+        </div>
+
+        <div class="screenshotLogo">
+            <img src="gorillapng.png" alt="gorilla png" width="60" height="60">
+            <b style="color: #e5f4f4; font-family: Biotif; font-size:1.2cm;" >gorillatype</b>
+        </div>
+
+        <div class="rightcontainer">
+            <div class="time">
+                <span style="color: #4e5155; font-family:Roboto Mono; font-size: 2rem;">Time</span>
+                <p class="timeContainer" style="color: #17b8bd; font-family:Roboto Mono; font-size: 4.2rem;"></p>
+            </div>
+
+            <div class="characters">
+                <span style="color: #4e5155; font-family:Roboto Mono; font-size: 2rem;">Characters</span>
+                <p class="charContainer" style="color: #17b8bd; font-family:Roboto Mono; font-size: 4rem;"></p>
+                <div class="hoverText">Correct/Incorrect</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="notification"><i class="fa-solid fa-check"></i> Image Copied To Clipboard!</div>
+
+    <button class="nextButton" onclick="goBack()"><i class="fas fa-fw fa-chevron-right"></i></button>
+    <button class="screenshotButton" onclick="takeScreenshot()"><i class="far fa-fw fa-image"></i></button>
+
+
+    <script src="https://kit.fontawesome.com/8e75413cde.js" crossorigin="anonymous"></script>
+    <script src="results.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Biotif';
+    src: url(fonts/Biotif/Biotif-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(fonts/Roboto-Mono/RobotoMono-Regular.ttf);
+}
+
+
+
+body{
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.logo{
+    display: flex;
+    position: absolute;
+    left: 4%;
+    user-select: none;
+}
+
+.leftcontainer{
+    position: absolute;
+    height: 30vh;
+    left: 20%;
+    top: 28%;
+}
+
+.wpm{
+    top: 30%;
+    width: 5rem;
+    user-select: none;
+}
+
+
+.wpmContainer{
+    position: absolute;
+    margin-top: 2rem;
+}
+
+.acc{
+    width: 5rem;
+    user-select: none;
+}
+
+.accContainer{
+    margin-top: 7rem;
+    padding-top: 1.5rem;
+}
+
+.test-type{
+    position: absolute;
+    top: 14rem;
+    width: 6rem;
+    user-select: none;
+}
+
+.typeContainer{
+    margin-top: 0rem;
+}
+
+button{
+    background-color: transparent;
+    color: #4e5155;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    height: 4.7rem;
+    width: 6.4rem;
+}
+
+button:hover{
+    color: #e5f4f4;
+}
+
+
+.nextButton{
+    position: absolute;
+    font-size: 3rem;
+    top: 42%;
+    left: 32%;
+    user-select: none;
+}
+.screenshotButton{
+    position: absolute;
+    font-size: 3rem;
+    top: 42%;
+    left: 56%;
+    user-select: none;
+}
+
+.rightcontainer{
+    position: absolute;
+    height: 30vh;
+    left: 68%;
+    top: 28%;
+}
+
+.time{
+    width: 20%;
+    user-select: none;
+}
+
+.timeContainer{
+    margin-top: -0.7rem;
+}
+
+.characters{
+    position: absolute;
+    top: 10rem;
+    width: 5rem;
+    user-select: none;
+}
+
+.charContainer{
+    margin-top: -0.7rem;
+}
+
+.hoverText{
+    display: blcok;
+    height: 1rem;
+    background-color: black;
+    color: #17b8bd;
+    padding: 0.3rem;
+    position: absolute;
+    top: 7rem;
+    left: 1.5rem;
+	background-color: rgb(0, 0, 0);
+	padding: 0.7rem;
+	font-size: 1.25em;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    opacity: 0;
+
+}
+
+.hoverText::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 1.5em;
+	border: .75rem solid transparent;
+	border-top: none;
+
+	border-bottom-color: rgb(0, 0, 0);
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+.hoverText{
+    transition: opacity 700ms linear;
+}
+
+.charContainer:hover + .hoverText{
+    opacity: 1;
+}
+
+.content{
+    top: 10rem;
+    width: 100vw;
+    height: 40rem;
+}
+
+.screenshotLogo{
+    display: none;
+    position: absolute;
+    top: 22rem;
+    left: 37vw;
+}
+
+
+
+.notification{
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 3.5rem;
+    background-color: #17b8bd;
+    color: #0d0d0e;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+}
+
+.notificationIn{
+    transition: opacity 1s ease-in-out;
+
+}
+
+.notificationIn{
+    opacity: 1;
+}
+
+

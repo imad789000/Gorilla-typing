@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frontendlayout.css">
+    <link rel="icon" type="image/x-icon" href="gorillaico.ico">
+
+    <title>GorillaType</title>
+
+    
+</head>
+
+<body>
+    <div class="hiddenText"></div>
+
+    <div class="logo">
+        <img src="gorillapng.png" alt="gorilla png" width="60" height="60">
+        <b style="color: #e5f4f4; font-family: Biotif; font-size:1.2cm;">gorillatype</b>
+        <button class="infoButton" onclick="window.location.href = 'info.html';"><i class="fa-solid fa-circle-question"></i> <div class="infoText">Learn </div><div class="infoText">more</div></button>
+
+    </div>
+
+    <div class="buttonsBarContainer">
+
+        <button class="punctuation" style="font-family:Roboto Mono;" onclick="punctuationButton()"><i class="fas fa-fw fa-at"></i>
+            Punctuation</button>
+
+        <div class="space" style="grid-column-start: 2;"></div>
+
+        <button class="time" style="grid-column-start: 3; font-family:Roboto Mono;" onclick="timedTest(15)"><i class="fas fa-clock"></i>
+            Time</button>
+        <button style="font-family:Roboto Mono;" onclick="generateQuote()" class="quoteButton"><i
+                class="fa-solid fa-quote-left"></i> Quote</button>
+        <button onclick="generateWords()" class="wordsButton" style="font-family:Roboto Mono;"><i
+                class="fas fa-fw fa-font"></i> Words</button>
+
+        <div class="space" style="grid-column-start: 6;"></div>
+
+        <button class="fifteenbutton" style="font-family:Roboto Mono;" onclick="optionButtonsManager(15)">15</button>
+        <button class="thirtybutton" style="font-family:Roboto Mono;" onclick="optionButtonsManager(30); custOptionSelected = '30'">30</button>
+        <button class="settings" onclick="customization(); customizePannel(); "><i class="fas fa-fw fa-tools"
+                style="margin-top:.1rem"></i></button>
+    </div>
+
+
+    <div class="textContainer">
+        <div class="timer" style="font-family:Roboto Mono;"></div>
+        <button class="restart" onclick="restartButton()"><i class="fa-solid fa-rotate-right"></i></button>
+        <div style="color: #4e5155; font-family:Roboto Mono; font-size: 1.5rem;" class="text">
+        </div>
+    </div>
+
+    <div class="customization">
+        <div class="info">
+            <div class="custheader" style="font-family:Roboto Mono;">
+                <h2></h2>
+            </div>
+            <input type="number" class="numberInput" >
+            <div class="description" style="font-family:Roboto Mono;"> </div>
+            <button class="custButton" style="font-family:Roboto Mono;" onclick="customizationSubmit()">Submit</button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/8e75413cde.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
