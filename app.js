@@ -527,9 +527,6 @@ function createSentence(howManyWords) {
 setInterval(() => {
     timer()
 }, 1000);
-window.addEventListener('click', (event) => {
-    console.log(event.button)
-})
 addListenner(true)
 document.querySelector(".restart").style.display = "block"
 generateWords()

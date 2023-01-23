@@ -24,6 +24,7 @@ body{
     position: absolute;
     display: flex;
     overflow: hidden;
+    user-select: none;
 
 }
 
@@ -31,16 +32,15 @@ body{
     position: absolute;
     display: flex;
     left: 4%;
+    user-select: none;
+
 }
 
 /* text properties */
 .textContainer{
     position: absolute;
-    /* display: flex; */
     margin: 0 auto;
     align-self: center;
-    /* justify-content: center;
-    align-items: center; */
     text-align: left;
     top: 42%;
     max-width: 50rem;
@@ -48,15 +48,18 @@ body{
     position: absolute;
     left: 25vw;
     right: 20vw;
+    user-select: none;
     justify-content: space-between;
 }
 
 .text{
+    user-select: none;
     margin-top: 11%;
 
 }
 
 .hiddenText{
+    user-select: none;
     display: none;
 }
 
@@ -70,8 +73,8 @@ body{
     padding: 0.2rem;
     height: 2rem;
     width: 38rem;
-    /* min-width: 30vw; */
     background-color: #121212;
+    user-select: none;
     border-radius: 7px;
 }
 
@@ -79,37 +82,44 @@ body{
     height: 100%;
     width:0.3rem;
     background-color: #181818;
+    user-select: none;
     border-radius: 4px;
 }
 
 .quoteButton{
     grid-column-start: 4;
+    user-select: none;
 }
 
 .wordsButton{
     grid-column-start: 5;
 
+    user-select: none;
 }
 
 .fifteenbutton{
     display: none;
     grid-column-start: 7; 
     grid-row-end: 1;
+    user-select: none;
 }
 
 .thirtybutton{
     display: none;
     grid-column-start: 8; 
     grid-row-end: 1;
+    user-select: none;
 }
 
 .punctuation{
     grid-column-start: 1;
+    user-select: none;
 }
 
 .settings{
     display: none;
     grid-column-start: 9; 
+    user-select: none;
 }
 
 button{
@@ -118,11 +128,13 @@ button{
     border: none;
     cursor: pointer;
     transition: color 0.3s ease;
+    user-select: none;
 
 }
 
 button:hover{
     color: #e5f4f4;
+    user-select: none;
 }
 
 .activated{
@@ -131,16 +143,19 @@ button:hover{
     border: none;
     cursor: pointer;
     transition: color 0.3s ease;
+    user-select: none;
 }
 
 .activated:hover{
     color: #e5f4f4;
+    user-select: none;
 }
 
 .timer{
     position: absolute;
     color: #17b8bd;
     font-size: 1.5rem;
+    user-select: none;
 }
 
 
@@ -150,6 +165,7 @@ button:hover{
     font-size: 1.8rem;
     margin: -0.5rem;
     
+    user-select: none;
 }
 
 /* customization pannel */
@@ -163,6 +179,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     
+    user-select: none;
 }
 
 .info{
@@ -176,6 +193,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .custButton{
@@ -188,6 +206,7 @@ button:hover{
     border-radius: 6px;
     transition: color 0.3s ease;
     transition: background-color 0.3s ease;
+    user-select: none;
 
 }
 
@@ -195,6 +214,7 @@ button:hover{
     color: #121212;
     background-color: #17b8bd;
 
+    user-select: none;
 }
 
 .custheader{
@@ -203,6 +223,7 @@ button:hover{
     top: 1rem;
     margin: 0px;
     color: #4e5155;
+    user-select: none;
 }
 
 .numberInput{
@@ -216,7 +237,7 @@ button:hover{
     outline: none;
     border: none;
     width: 28rem;
-
+    user-select: none;
 }
 
 .description{
@@ -224,21 +245,7 @@ button:hover{
     position: absolute;
     bottom: 4.8rem;
     width: 28rem;
-}
-
-.blockscreen{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    color: #17b8bd;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: none;
-
+    user-select: none;
 }
 
 .restart{
@@ -249,6 +256,7 @@ button:hover{
     font-size: 2rem;
     left: 45%;
     top: 10%;
+    user-select: none;
 }
 
 .infoButton{
@@ -269,15 +277,19 @@ button:hover{
     width: 1.5rem;
     overflow: hidden;
     transition: width 0.25s linear;
+    user-select: none;
 }
 
 .infoButton:hover{
     color: #e5f4f4;
     background-color:rgb(23, 184, 189);
-    width: 7.5rem;
+    width: 8.2rem;
+    user-select: none;
 }
 
 .infoText{
     color: #4e5155;
     margin-left: 0.5rem;
+    user-select: none;
+    font-family:'Roboto Mono'; 
 }

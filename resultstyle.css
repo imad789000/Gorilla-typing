@@ -185,8 +185,9 @@ button:hover{
     height: 3.5rem;
     background-color: #17b8bd;
     color: #0d0d0e;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border-radius: .5rem;
+    font-family:'Roboto Mono'; 
 }
 
 .notificationIn{
