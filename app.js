@@ -466,7 +466,7 @@ function timedTest(howManySeconds) {
     let sentence = ""
     for (let i = 0; i < 80; i++) {
 
-        sentence += words[Math.floor((Math.random() * 10000) + 1)]
+        sentence += words[Math.floor((Math.random() * 998) + 1)]
         sentence += " "
 
     }
