@@ -35,7 +35,6 @@ button{
     align-self: flex-end;
     font-family: Roboto Mono;
     font-size: 0.8rem;
-    /* position: absolute; */
     /* top: 60vh; */
     /* right: 24.2vw; */
     transition: background-color 0.3s linear, font-size 0.3s linear, border-radius 0.5s linear, padding 0.3s linear, color 0.3s linear;
@@ -108,4 +107,10 @@ button{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.contactinfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
