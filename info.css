@@ -10,15 +10,18 @@ body{
     position: absolute;
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
+    
 }
 
 h1{
     width: fit-content;
-    position: absolute;
-    top: 10rem;
+    /* position: absolute; */
+    /* top: 10rem; */
     font-family: Roboto Mono;
     color: #e5f4f4;
+    margin-bottom: 10%;
 }
 
 button{
@@ -29,11 +32,12 @@ button{
 
 .Contact{
     color: #4e5155;
+    align-self: flex-end;
     font-family: Roboto Mono;
     font-size: 0.8rem;
-    position: absolute;
-    top: 60vh;
-    right: 24.2vw;
+    /* position: absolute; */
+    /* top: 60vh; */
+    /* right: 24.2vw; */
     transition: background-color 0.3s linear, font-size 0.3s linear, border-radius 0.5s linear, padding 0.3s linear, color 0.3s linear;
 }
 
@@ -51,9 +55,10 @@ button{
     color: #4e5155;
     font-family: Roboto Mono;
     font-size: 0.8rem;
-    position: absolute;
-    top: 60vh;
-    left: 24.2vw;
+    align-self: flex-start;
+    /* position: absolute; */
+    /* top: 60vh; */
+    /* left: 24.2vw; */
     transition: background-color 0.3s linear, font-size 0.3s linear, border-radius 0.5s linear, padding 0.3s linear, color 0.3s linear;
 }
 
@@ -65,16 +70,18 @@ button{
     color: #e5f4f4;
     border-radius: 2rem;
     padding: 0.5rem;
+    
 }
 
 .text{
-    position: absolute;
+    /* position: absolute; */
     font-family: Roboto Mono;
-    align-self: center;
-    width: 51vw;
-    height: 40vh;
+    /* align-self: center; */
+    /* width: 51vw;
+    height: 40vh; */
     word-wrap: break-word;
     color: #4e5155;
+    margin-bottom: 5%;
 }
 
 .back{
@@ -91,4 +98,14 @@ button{
 
 .back:hover{
     color: #e5f4f4;
+}
+
+.content{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
